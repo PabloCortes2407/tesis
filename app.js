@@ -10,10 +10,10 @@ const dias = [
 " domingos",
 ]
 const pasos = [
-    "Tabla de quesos y salames curados",
-    "brochetas de carne y vegetales grillados",
-    "porterhouse a las brazas con ensalada de verdes",
-    "creme brulee",
+    "1° Tabla de quesos y salames curados",
+    "2° brochetas de carne y vegetales grillados",
+    "3° porterhouse a las brazas con ensalada de verdes",
+    "4° creme brûlée",
 ]
 const numero = 1127700861;
 function abiertos() {
