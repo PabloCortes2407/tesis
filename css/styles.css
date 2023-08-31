@@ -1,0 +1,40 @@
+.titulos {
+text-align: center;
+}
+.maduracion--1 {
+    grid-area: 1;
+    height: 500px;
+    width: 33%;
+}
+.maduracion--2 {
+    grid-area: 2;
+    height: 500px;
+    width: 33%;
+}
+.maduracion--3 {
+    grid-area: 3;
+    height: 500px;
+    width: 33%;
+}
+.reserva{
+    border: none;
+    min-width: 100px;
+    height: 50px;
+    padding: 0px 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: inline-block;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: blue;
+    text-decoration: none;
+    text-align: right;
+    position: relative;
+  }
+  .reserva:hover {
+    background: darkblue;
+    text-decoration: underline;
+  }
+
