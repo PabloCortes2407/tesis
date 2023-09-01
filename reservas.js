@@ -64,7 +64,7 @@ personas = prompt(`¿cuantas personas vendrian?`)
 if (personas <=2, personas <=10) {alert (`Vendrian ${personas} personas`)
 }
 else {
-    alert(`Para reservas de menos de 2 o mas de 10 personas comunicate a este numero ${numero}`)
+    alert(`Para reservas de mas de 10 personas comunicate a este numero ${numero}`)
 }
 for (let i = 0; i < pasos.length; i++){
     alert(`los pasos son:  ${pasos[i]}`)
@@ -75,6 +75,6 @@ switch (comida) {
     alert (`piden en el lugar por carta, los esperamos`)
     break;  
     case `pasos`:
-    alert(`esperamos a ${personas} a las ${horario} horas`)
+    alert(`esperamos a ${personas} personas a las ${horario} horas`)
     break;
 }
