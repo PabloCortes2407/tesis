@@ -16,7 +16,7 @@ text-align: center;
     height: 500px;
     width: 33%;
 }
-.reserva{
+.btn{
     border: none;
     min-width: 100px;
     height: 50px;
@@ -33,7 +33,7 @@ text-align: center;
     text-align: right;
     position: relative;
   }
-  .reserva:hover {
+  .btn:hover {
     background: darkblue;
     text-decoration: underline;
   }

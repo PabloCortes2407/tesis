@@ -17,7 +17,7 @@ const pasos = [
 ]
 const numero = 1127700861;
 function abiertos() {
-    alert("Estamos abiertos los dias " + dias)
+    alert(`Estamos abiertos los dias ${dias}` )
 }
 
 horario = prompt(`Bienvenido ¿En que horario querrias visitarnos? tomamos reservas de 11 a 15 y de 20 a 24`)
