@@ -1,25 +1,9 @@
 let horario;
 let personas;
 let comida;
-const dias = [
-`martes`,
-` miercoles`,
-` jueves`,
-` viernes`,
-` sabados`,
-` domingos`,
-]
-const pasos = [
-    `1° Tabla de quesos y salames curados`,
-    `2° brochetas de carne y vegetales grillados`,
-    `3° porterhouse a las brazas con ensalada de verdes`,
-    `4° creme brûlée`,
-]
-const numero = 1127700861;
-function abiertos() {
-    alert(`Estamos abiertos los dias ${dias}` )
-}
-
+let nombre;
+let Restriccion;
+nombre = prompt (`ingresa tu nombre`)
 horario = prompt(`Bienvenido ¿En que horario querrias visitarnos? tomamos reservas de 11 a 15 y de 20 a 24`)
 switch (horario) {
 case `11`:
@@ -69,12 +53,29 @@ else {
 for (let i = 0; i < pasos.length; i++){
     alert(`los pasos son:  ${pasos[i]}`)
 }
-comida = prompt('¿preferiran menu a carta o menu pre-armado de 4 pasos? para elegir ingresar "carta o pasos"')
+comida = prompt (`Hola ${nombre} queres comida por pasos o mediante la carta, para elegirn ingrese "pasos o carta"`)
 switch (comida) {
-    case `carta`:
-    alert (`piden en el lugar por carta, los esperamos`)
-    break;  
     case `pasos`:
-    alert(`esperamos a ${personas} personas a las ${horario} horas`)
+    alert (`${nombre} ha reservado una mesa para ${personas} personas a las ${horario} horas con menu de pasos`)
+    break;
+    case `carta`:
+    alert(`${nombre} ha reservado una mesa para ${personas} personas a las ${horario} horas, piden en el lugar`)
     break;
 }
+
+Restriccion = prompt (`¿alguno de ustedes tiene alguna restriccion al comer? ¿cual?`)
+function Exclusividad (restriccion) {
+    if (restriccion === `si`) {
+        return function(nombre) {
+            alert(`${nombre} para personas con restricciones como ${Restriccion} tenemos una espera de 1 semana`)
+        }
+    } else {
+        return function(nombre) {
+            alert (`los esperamos`)
+        }
+    }
+}
+const DietaRestringida = Exclusividad(`si`)
+DietaRestringida(nombre);
+const DietaNoRestringida = Exclusividad(`no`)
+DietaNoRestringida(nombre);

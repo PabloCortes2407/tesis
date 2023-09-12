@@ -1,4 +1,4 @@
-const entradas =[`ENTRADAS`,
+const entradas =[`\nENTRADAS`,
 `\n Chorizo {$$}`,
 `\n Morcilla {$$}`,
 `\n Matrimonio {$$$} (1 chorizo y 1 morcilla)`,
@@ -18,7 +18,7 @@ const fuego =[`\n ASADO`,
     `\n T-bone {$$$}`,
     `\n Matambre de cerdo {$$$}`,
 ]
-const ahumados =[`AHUMADOS`,
+const ahumados =[`\nAHUMADOS`,
 `\n Ribs a la barbacoa {$$$$}`,
 `\n Bondiola con reducción de cerveza negra {$$$$}`,
 `\n Sándwich de brisket ahumado {$$$}`,
@@ -66,31 +66,18 @@ const vino =[`\n VINOS`,
 `\n Botella de Espumante {$$$$$}`,
 ]
 
-
-function entrada() {
-   console.log (`en nuestras entradas tenemos ${entradas}`) 
-}
-function parrilla() {
-   console.log (`en nuestra parrilla tenemos ${fuego}`) 
-}
-function ahumado() {
-   console.log (`en nuestros ahumados tenemos ${ahumados}`) 
-}
-function parrillada() {
-   console.log (`en nuestras parrilladas tenemos ${parrilladas}`) 
-}
-function cocina() {
-   console.log (`en nuestra cocina tenemos ${platos}`) 
-}
-function acompañamiento() {
-   console.log (`para primeros platos tenemos ${acompañamientos}`) 
-}
-function tragos() {
-    console.log (`para tomar tenemos ${trago}`) 
- }
- function postres() {
-    console.log (`de postre tenemos ${postre}`) 
- }
- function vinos() {
-    console.log (`nuestros vinos son ${vino}`) 
- }
+const dias = [
+   `martes`,
+   ` miercoles`,
+   ` jueves`,
+   ` viernes`,
+   ` sabados`,
+   ` domingos`,
+   ]
+const pasos = [
+       `1° Tabla de quesos y salames curados`,
+       `2° brochetas de carne y vegetales grillados`,
+       `3° porterhouse a las brazas con ensalada de verdes`,
+       `4° creme brûlée`,
+   ]
+   const numero = 1127700861;
