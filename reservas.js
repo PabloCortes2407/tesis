@@ -3,6 +3,7 @@ let personas;
 let comida;
 let nombre;
 let Restriccion;
+function reservar(){
 nombre = prompt (`ingresa tu nombre`)
 horario = prompt(`Bienvenido ¿En que horario querrias visitarnos? tomamos reservas de 11 a 15 y de 20 a 24`)
 switch (horario) {
@@ -79,3 +80,4 @@ const DietaRestringida = Exclusividad(`si`)
 DietaRestringida(nombre);
 const DietaNoRestringida = Exclusividad(`no`)
 DietaNoRestringida(nombre);
+}
