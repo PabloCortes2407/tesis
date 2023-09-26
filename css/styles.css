@@ -1,21 +1,25 @@
 .titulos {
 text-align: center;
 }
+
 .maduracion--1 {
     grid-area: 1;
     height: 500px;
     width: 33%;
 }
+
 .maduracion--2 {
     grid-area: 2;
     height: 500px;
     width: 33%;
 }
+
 .maduracion--3 {
     grid-area: 3;
     height: 500px;
     width: 33%;
 }
+
 .btn{
     border: none;
     min-width: 100px;
@@ -33,8 +37,100 @@ text-align: center;
     text-align: right;
     position: relative;
   }
+
   .btn:hover {
     background: darkblue;
     text-decoration: underline;
   }
 
+  .padre-cartas {
+    display: flex;
+  }
+
+  .producto-carta {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-producto {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto-precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #eb470c;
+}
+.producto-btn {
+    display: block;
+    background-color: #0c9219;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.producto-btn :hover {
+    background-color: #074206;
+}
+.dias {
+    font-size: x-large;
+}
+.carrito {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.carrito-cabecera {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-productos {
+    margin: 10px 0;
+}
+
+.form-reversas{
+    width: 300px;
+    background: #410daa;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: 'Calibri';
+    color: #fff;
+}
+
+.form-h4 {
+    font-size: 20px;
+}
+
+.form-info {
+    width: 100%;
+    background: #410daa;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Calibri';
+    border: 1px solid;
+    font-size: 20px;
+}
+.reservar {
+    width: 100%;
+    padding: 10px;
+}

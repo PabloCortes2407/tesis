@@ -16,20 +16,303 @@
     <img class="maduracion--1" src="./img/camara-maduracion.jpg" alt="camara maduracion">
     <img class="maduracion--2" src="./img/dryaged2.height-500.png" alt="carne madurada al medio"> 
     <img class="maduracion--3" src="./img/Que-es-la-carne-de-vaca-madurada.jpg" alt="cortes madurados">   
- </div>
+ </div>  
  <div>
-  <a class="btn" role="button" href="#" onclick="reservar()">¡Reserva mesa!</a>  
-    <hr>
-  <a class="btn" role="button" href="#" onclick="delivery()">¡Pedi por delivery!</a> 
-    <hr>
-   <a class="btn" role="button" href="#" onclick="abiertos()">Dias que estamos abiertos</a> 
-   <hr>
-   <a class="btn" role="button" href="#" onclick="carta1()">¡Mira nuestras carta!</a>
+  <div class="carrito">
+    <div class="carrito-cabecera">Carrito para Delivery</div>
+    <div class="carrito-productos">
+    </div>
+    <a id="comprar" class="btn" role="button" href="#" onclick="comprar()">Compra</a>  
   </div>
+</div>
+<section class="form-reservas">
+  <h4 class="form-h4">hace tu reserva ahora</h4>
+  <input class="form-info" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+  <input class="form-info" type="text" name="horario" id="horario" placeholder="ingrese el horario de la reserva">
+  <input class="form-info" type="text" name="personas" id="personas" placeholder="ingrese la cantidad de personas que vendrian">
+  <input class="form-info" type="text" name="restricciones" id="restricciones" placeholder="ingrese si, si alguen tiene restricciones a la hora de comer">
+  <input class="reservar" type="submit" value="reservar" id="reservo">
+</section>
+<div>
+  <p class="dias"> los dias que estamos abiertos son martes, miercoles, jueves, viernes, sabados y domingos</p> 
+</div>
+  <div class="padre-cartas">
+   <div class="producto-carta" id="chori">
+     <img src="./img/CHORI.avif" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">chorizo</h2>
+     <p class="producto-precio">1500</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="morcilla">
+     <img src="./img/morcilla.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">morcilla</h2>
+     <p class="producto-precio">1200</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="matrimonio">
+     <img src="./img/matrimonio.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">matrimonio</h2>
+     <p class="producto-precio">2300</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="provoleta">
+     <img src="./img/provoleta.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">provoleta</h2>
+     <p class="producto-precio">2700</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="mollejas">
+     <img src="./img/mollejas.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">mollejas a la crema</h2>
+     <p class="producto-precio">3300</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="empanada">
+     <img src="./img/empanada.jpeg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">empanada</h2>
+     <p class="producto-precio">800</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="aros">  
+   <img src="./img/aros-de-cebolla-fritos.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">aros de cebolla</h2>
+   <p class="producto-precio">1800</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="achuras">  
+   <img src="./img/achuras.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">mix de achuras</h2>
+   <p class="producto-precio">3800</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="chinchulines">  
+   <img src="./img/chinchu.webp" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">chinchilines</h2>
+   <p class="producto-precio">1400</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="patamuslo">  
+   <img src="./img/patamuslo.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">pata-muslo</h2>
+   <p class="producto-precio">4000</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="entraña">
+    <img src="./img/entraña.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">entraña</h2>
+    <p class="producto-precio">5000</p>
+    <a href="#" class="producto-btn">agregar</a>
+   </div>  
+ </div>
+  <div class="padre-cartas">
+   <div class="producto-carta" id="vacio">
+     <img src="./img/vacio.webp" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">vacio</h2>
+     <p class="producto-precio">4500</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="costillar">
+     <img src="./img/costillar.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">costillar</h2>
+     <p class="producto-precio">6500</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="porterhouse">
+     <img src="./img/porterhouse.webp" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">porterhouse</h2>
+     <p class="producto-precio">5600</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="tbone">
+     <img src="./img/tbone.webp" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">T-bone</h2>
+     <p class="producto-precio">5200</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="matambre">
+     <img src="./img/matambre-de-cerdo-a-la-parrilla.jpg" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">matambre de cerdo</h2>
+     <p class="producto-precio">4000</p>
+    <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="ribs">
+     <img src="./img/ribsbbq.webp" alt="imagen producto" class="imagen-producto">
+     <h2 class="producto-titulo">ribs a la barbacoa</h2>
+     <p class="producto-precio">6500</p>
+     <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="bondiola">  
+   <img src="./img/bondiola.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">bondiola con reduccion de cerveza negra</h2>
+   <p class="producto-precio">6000</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="brisket">  
+   <img src="./img/brisket.webp" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">sandwich de brisket</h2>
+   <p class="producto-precio">3500</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="parrillada">  
+   <img src="./img/parrillada.avif" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">parrillada</h2>
+   <p class="producto-precio">11000</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="ahumada">  
+   <img src="./img/ahumada.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">parrillada ahumada</h2>
+   <p class="producto-precio">9800</p>
+   <a href="#" class="producto-btn">agregar</a>
+   </div>
+   <div class="producto-carta" id="ravioles">
+    <img src="./img/ravioles.webp" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">ravioles</h2>
+    <p class="producto-precio">3300</p>
+    <a href="#" class="producto-btn">agregar</a>
+   </div>  
+ </div>
+ <div class="padre-cartas">
+  <div class="producto-carta" id="pasta">
+    <img src="./img/cacioepepe.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">pasta cacio e pepe</h2>
+    <p class="producto-precio">3600</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="pechuga">
+    <img src="./img/pechuga.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">pechuga de pollo rellena de queso azul</h2>
+    <p class="producto-precio">3000</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="milapollo">
+    <img src="./img/milapollo.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">milanesa de pollo con bechamel y quesos</h2>
+    <p class="producto-precio">3500</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="milacarne">
+    <img src="./img/milacarne.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">milanesa de carne</h2>
+    <p class="producto-precio">2800</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="papas">
+    <img src="./img/papasfritas.jpg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">papas fritas</h2>
+    <p class="producto-precio">1000</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="batatas">
+    <img src="./img/batatas-fritas-6.jpg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">batatas fritas</h2>
+    <p class="producto-precio">1200</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="pure">  
+  <img src="./img/pure.webp" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">pure de papa</h2>
+  <p class="producto-precio">1200</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="papascaballo">  
+  <img src="./img/papascaballo.jpeg" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">papas a caballo</h2>
+  <p class="producto-precio">1800</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="ensalada">  
+  <img src="./img/ensalada.avif" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">ensalada</h2>
+  <p class="producto-precio">1000</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="huevo">  
+  <img src="./img/huevo-frito.jpg" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">huevo frito</h2>
+  <p class="producto-precio">800</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="cremebrulee">
+   <img src="./img/cremebrulee.jpeg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">creme brulee</h2>
+   <p class="producto-precio">2800</p>
+   <a href="#" class="producto-btn">agregar</a>
+  </div>  
+</div>
+ <div class="padre-cartas">
+  <div class="producto-carta" id="flan">
+    <img src="./img/flan-mixto-receta-casera-el-postre-mas-perfecto.webp" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">flan mixto</h2>
+    <p class="producto-precio">2300</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="brownie">
+    <img src="./img/brownie.jpeg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">brownie con helado</h2>
+    <p class="producto-precio">3200</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="crumble">
+    <img src="./img/crumble.webp" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">crumble de manzana</h2>
+    <p class="producto-precio">3300</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="cheseecake">
+    <img src="./img/cheseecake.webp" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">cheseecake</h2>
+    <p class="producto-precio">3500</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="copa">
+    <img src="./img/copavino.jpg" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">copa de vino</h2>
+    <p class="producto-precio">2000</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="malbec">
+    <img src="./img/malbec.webp" alt="imagen producto" class="imagen-producto">
+    <h2 class="producto-titulo">botella de vino malbec</h2>
+    <p class="producto-precio">4000</p>
+    <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="cabernet">  
+  <img src="./img/cabernet.webp" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">botella de vino cabernet sauvignon</h2>
+  <p class="producto-precio">4000</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="pinot">  
+  <img src="./img/pinotnoir.jpeg" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">botella de vino pinot noir</h2>
+  <p class="producto-precio">4000</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="merlot">  
+  <img src="./img/merlot.png" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">botella de vino merlot</h2>
+  <p class="producto-precio">4000</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="rosado">  
+  <img src="./img/rosado.webp" alt="imagen producto" class="imagen-producto">
+  <h2 class="producto-titulo">botella de vino rosado</h2>
+  <p class="producto-precio">4500</p>
+  <a href="#" class="producto-btn">agregar</a>
+  </div>
+  <div class="producto-carta" id="espumante">
+   <img src="./img/espumante.jpg" alt="imagen producto" class="imagen-producto">
+   <h2 class="producto-titulo">botella de vino espumante</h2>
+   <p class="producto-precio">5000</p>
+   <a href="#" class="producto-btn">agregar</a>
+  </div>  
+ 
   <script src="./arrays.js"></script>
   <script src="./funciones.js"></script>
   <script src="./productos.js"></script>
   <script src="./deliverys.js"></script>
+  <script src="./botones.js"></script>
   <script src="./reservas.js"></script>
 </body>
 </html>
