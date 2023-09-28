@@ -3,20 +3,18 @@
         const calle = document.getElementById('calle');
         const productoscarrito = document.getElementsByClassName("carrito-productos")[0];
         const carritoItems = [];
-    
         nombredeli.addEventListener("change", () => {
             const nombrepedido = nombredeli.value;
-            console.log(`Tu nombre es ${nombrepedido}`);
+            localStorage.setItem('nombre pedido',nombrepedido)
         });
     
         localidad.addEventListener("change", () => {
             const localidadpedido = localidad.value;
-            localidadpedido != '' ? console.log(`Tu localidad es ${localidadpedido}`) : alert(`No ingresaste localidad`);
-        });
+           localStorage.setItem('localidad', localidadpedido)});
     
         calle.addEventListener("change", () => {
             const callepedido = calle.value;
-            callepedido != '' ? console.log(`Tu calle es ${callepedido}`) : alert(`No ingresaste la calle`);
+            localStorage.setItem('calle y numero', callepedido)
         });
     
         function comprar() {

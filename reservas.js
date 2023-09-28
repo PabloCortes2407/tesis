@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reservo = document.getElementById('reservo');
 nombre.addEventListener ("change", () =>{
 const nombreuser = nombre.value
-console.log (`tu nombre es ${nombreuser}`)
+localStorage.setItem('nombre reserva', nombreuser)
 })
 horario.addEventListener ("change", () =>{
     const horariodefinido = horario.value
