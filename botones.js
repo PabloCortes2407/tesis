@@ -175,8 +175,3 @@ rosado.addEventListener('click', function() {
 const espumante = document.querySelector('#espumante'); 
 espumante.addEventListener('click', function() {
   añadirProducto('botella de vino espumante', 5000);});
-  const nombre = document.getElementById("#nombre")
-  const horario = document.getElementById("#horario")
-  const personas = document.getElementById("#personas")
-  const restricciones = document.getElementById("#restricciones")
-  const reservo =  document.getElementById("#reservo")

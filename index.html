@@ -18,13 +18,6 @@
     <img class="maduracion--3" src="./img/Que-es-la-carne-de-vaca-madurada.jpg" alt="cortes madurados">   
  </div>  
  <div>
-  <div class="carrito">
-    <div class="carrito-cabecera">Carrito para Delivery</div>
-    <div class="carrito-productos">
-    </div>
-    <a id="comprar" class="btn" role="button" href="#" onclick="comprar()">Compra</a>  
-  </div>
-</div>
 <section class="form-reservas">
   <h4 class="form-h4">hace tu reserva ahora</h4>
   <input class="form-info" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
@@ -33,6 +26,16 @@
   <input class="form-info" type="text" name="restricciones" id="restricciones" placeholder="ingrese si, si alguen tiene restricciones a la hora de comer">
   <input class="reservar" type="submit" value="reservar" id="reservo">
 </section>
+  <div class="carrito">
+    <div class="carrito-cabecera">Carrito para Delivery</div>
+    <div class="carrito-productos">
+    </div>
+      <input class="deli-info" type="text" name="nombredeli" id="nombredeli" placeholder="ingrese su nombre">
+      <input class="deli-info" type="text" name="localidad" id="localidad" placeholder="ingrese su localidad">
+      <input class="deli-info" type="text" name="calle" id="calle" placeholder="ingrese la calle y el numero">
+    <a id="comprar" class="btn" role="button" href="#" onclick="comprar()">Compra</a>  
+  </div>
+</div>
 <div>
   <p class="dias"> los dias que estamos abiertos son martes, miercoles, jueves, viernes, sabados y domingos</p> 
 </div>
@@ -309,10 +312,9 @@
   </div>  
  
   <script src="./arrays.js"></script>
-  <script src="./funciones.js"></script>
   <script src="./productos.js"></script>
-  <script src="./deliverys.js"></script>
   <script src="./botones.js"></script>
+  <script src="./deliverys.js"></script>
   <script src="./reservas.js"></script>
 </body>
 </html>

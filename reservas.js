@@ -52,22 +52,14 @@ horario.addEventListener ("change", () =>{
 })
 personas.addEventListener ("change", () =>{
     const cantidadpersonas = personas.value
-    if (cantidadpersonas <= 2 || cantidadpersonas > 10) {
-}
-else {
-    alert(`Para reservas de mas de 10 personas comunicate a este numero ${numero}`)
-}
-})
+cantidadpersonas <= 2 || cantidadpersonas > 10 ? console.log (`vienen ${cantidadpersonas} personas`) : alert(`Para reservas de mas de 10 personas comunicate a este numero ${numero}`);
 
 restricciones.addEventListener ("change", () =>{
    const userrestricciones = restricciones.value
-   if (userrestricciones === 'si') {
-    alert(`${nombre.value}, para personas con restricciones tenemos una espera de 1 semana`);
-} else {
-    alert('Los esperamos');
-}
+userrestricciones === 'si' ? alert(`${nombre.value}, para personas con restricciones tenemos una espera de 1 semana`) : alert('Los esperamos');
 })
 reservo.addEventListener("click", () => {
     alert(`Usted ha tomado una reserva a las ${horario.value} horas, vendrán ${personas.value} personas a nombre de ${nombre.value}`);
 });
+})
 });
