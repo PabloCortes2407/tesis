@@ -21,9 +21,13 @@
             const totalcarrito = carritoItems.reduce((acum, item) => {
                 return acum + item.productoPrecio * item.cantidad;
             }, 0);
-    
-            alert(`Muchas gracias por su compra, el valor total es de ${totalcarrito.toFixed(2)}$, lo estaremos enviando a ${calle.value}`);
-            while (productoscarrito.firstChild) {
+           Swal.fire ({
+            title: `Gracias por la compra`,
+            text: `Muchas gracias por su compra, el valor total es de ${totalcarrito.toFixed(2)}$, lo estaremos enviando a ${calle.value}`,
+            icon: `success`,
+            confirmButtonText: `Listo`,
+           })
+                       while (productoscarrito.firstChild) {
                 productoscarrito.removeChild(productoscarrito.firstChild);
             }
         }

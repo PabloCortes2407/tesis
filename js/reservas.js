@@ -47,19 +47,33 @@ horario.addEventListener ("change", () =>{
         break;
         case `24`:
         break;
-        default: alert(`¡A esa hora estamos cerrados!`)
+        default: //(`¡A esa hora estamos cerrados!`)
+        Swal.fire ({
+        text: `¡A esa hora estamos cerrados!`,
+         icon: `error`,
+         confirmButtonText: `ok`,
+        })
         }
 })
 personas.addEventListener ("change", () =>{
     const cantidadpersonas = personas.value
-cantidadpersonas <= 2 || cantidadpersonas > 10 ? console.log (`vienen ${cantidadpersonas} personas`) : alert(`Para reservas de mas de 10 personas comunicate a este numero ${numero}`);
+cantidadpersonas <= 2 || cantidadpersonas > 10 ? console.log (`vienen ${cantidadpersonas} personas`) : Swal.fire ({
+    text: `Para reservas de mas de 10 personas comunicate a este numero ${numero}`,
+     icon: `error`,
+     confirmButtonText: `ok`,
+    })
 
 restricciones.addEventListener ("change", () =>{
    const userrestricciones = restricciones.value
 userrestricciones === 'si' ? alert(`${nombre.value}, para personas con restricciones tenemos una espera de 1 semana`) : alert('Los esperamos');
 })
 reservo.addEventListener("click", () => {
-    alert(`Usted ha tomado una reserva a las ${horario.value} horas, vendrán ${personas.value} personas a nombre de ${nombre.value}`);
+    Swal.fire({
+        title: `Reservado`,
+        text: `Usted ha tomado una reserva a las ${horario.value} horas, vendrán ${personas.value} personas a nombre de ${nombre.value}`,
+        icon: `success`,
+        confirmButtonText: `Listo`,
+    });
 });
 })
 });

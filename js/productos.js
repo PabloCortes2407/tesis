@@ -48,3 +48,4 @@ Pinotnoir = new Item ('botella de pinotnoir','bebida', 4000),
 Merlot = new Item ('botella de merlot','bebida', 4000),
 Rosado = new Item ('botella de rosado','bebida', 4500),
 Espumante = new Item ( 'botella de espumante','bebida', 5500)]
+localStorage.setItem('productos', JSON.stringify(productos));
