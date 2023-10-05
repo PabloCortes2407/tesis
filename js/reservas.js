@@ -47,7 +47,7 @@ horario.addEventListener ("change", () =>{
         break;
         case `24`:
         break;
-        default: //(`¡A esa hora estamos cerrados!`)
+        default:
         Swal.fire ({
         text: `¡A esa hora estamos cerrados!`,
          icon: `error`,
@@ -57,7 +57,7 @@ horario.addEventListener ("change", () =>{
 })
 personas.addEventListener ("change", () =>{
     const cantidadpersonas = personas.value
-cantidadpersonas <= 2 || cantidadpersonas > 10 ? console.log (`vienen ${cantidadpersonas} personas`) : Swal.fire ({
+cantidadpersonas <= 2 || cantidadpersonas > 10 ? localStorage.setItem (`personas reserva`, cantidadpersonas) : Swal.fire ({
     text: `Para reservas de mas de 10 personas comunicate a este numero ${numero}`,
      icon: `error`,
      confirmButtonText: `ok`,

@@ -1,6 +1,7 @@
         const nombredeli = document.getElementById('nombredeli');
         const localidad = document.getElementById('localidad');
         const calle = document.getElementById('calle');
+        const vaciar = document.getElementById('vaciar')
         const productoscarrito = document.getElementsByClassName("carrito-productos")[0];
         const carritoItems = [];
         nombredeli.addEventListener("change", () => {
@@ -49,3 +50,10 @@
             productoscarrito.appendChild(item);
             carritoItems.push({ productoNombre, productoPrecio, cantidad });
         }
+        function vaciarcarrito() {
+            carritoItems.length = 0;
+            while (productoscarrito.firstChild) {
+                productoscarrito.removeChild(productoscarrito.firstChild);
+            }
+        }
+        vaciar.addEventListener('click', vaciarcarrito)
