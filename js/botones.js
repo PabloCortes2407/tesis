@@ -192,7 +192,7 @@ espumante.addEventListener('click', function() {
 })
 .then((response) => {
   if (!response.ok) {
-    throw new Error('Network response was not ok');
+    throw new Error('Error en la respuesta');
   }
   return response.json();
 })
