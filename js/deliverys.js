@@ -27,7 +27,7 @@
             text: `Muchas gracias por su compra, el valor total es de ${totalcarrito.toFixed(2)}$, lo estaremos enviando a ${calle.value}`,
             icon: `success`,
             confirmButtonText: `Listo`,
-           })
+            })
                        while (productoscarrito.firstChild) {
                 productoscarrito.removeChild(productoscarrito.firstChild);
             }
@@ -51,9 +51,29 @@
             carritoItems.push({ productoNombre, productoPrecio, cantidad });
         }
         function vaciarcarrito() {
-            carritoItems.length = 0;
-            while (productoscarrito.firstChild) {
-                productoscarrito.removeChild(productoscarrito.firstChild);
+        carritoItems.length = 0;
+        while (productoscarrito.firstChild) {
+        productoscarrito.removeChild(productoscarrito.firstChild);
+         }
+       }
+    
+    vaciar.addEventListener('click',() => {
+        Swal.fire({
+            title: 'Estas seguro de vaciar el carrito',
+            icon: 'question',
+            showCancelButton: true,
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Vaciar'
+        })
+        .then((result) => {
+            if (result.isConfirmed) {
+                carritoItems = [];
+                localStorage.setItem('carrito', carrito);
+                vaciarcarrito();
+                Swal.fire({
+                    title: 'Carrito vaciado!',
+                    icon: 'success'
+                });
             }
-        }
-        vaciar.addEventListener('click', vaciarcarrito)
+        })
+    });

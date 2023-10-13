@@ -57,7 +57,7 @@ horario.addEventListener ("change", () =>{
 })
 personas.addEventListener ("change", () =>{
     const cantidadpersonas = personas.value
-cantidadpersonas <= 2 || cantidadpersonas > 10 ? localStorage.setItem (`personas reserva`, cantidadpersonas) : Swal.fire ({
+cantidadpersonas < 1 || cantidadpersonas <= 10 ? localStorage.setItem (`personas reserva`, cantidadpersonas) : Swal.fire ({
     text: `Para reservas de mas de 10 personas comunicate a este numero ${numero}`,
      icon: `error`,
      confirmButtonText: `ok`,
@@ -77,3 +77,4 @@ reservo.addEventListener("click", () => {
 });
 })
 });
+const numero = 1127700861;
