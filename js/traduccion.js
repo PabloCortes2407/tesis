@@ -3,7 +3,7 @@ function vertraducido() {
       method: 'POST',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Key': '5281e809b3msh68382759ccef34cp1360f2jsn7c539a9fec02',
+        'X-RapidAPI-Key': 'a70fb862a0msh22da1af0395dcd9p16eeefjsn6d75cf770cfd',
         'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
       },
       body: new URLSearchParams({
